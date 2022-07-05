@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    padding: 50px;
+    gap: 10px;
+
+}
+
+.bookCard {
+    width: 300px;
+    height: 350px;
+    background-color: lightblue;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookCard h1, h2 {
+    text-align: center;
+}
+
+.bookCard p {
+    font-size: 1.5rem;
+}
+
+.bookCard button {
+    width: 150px;
+    line-height: 1.5rem;
+    flex: 0 0 0;
+    margin-bottom: 10px;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newBookForm {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.newBookForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.newBookForm button {
+    margin-top: 150px;
+    line-height: 2rem;
+    font-size: 1rem;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+button {
+    transition: filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+input {
+    line-height: 2rem;
+    width: 400px;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.hidden {
+    display: none;
+}
