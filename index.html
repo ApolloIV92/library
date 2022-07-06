@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="pageHeader">
+        <p>Library</p>
+        <button id="addBook">Add a new book!</button>
+    </div>
     <div id="cards">     
     </div>
-    <button id="addBook">Add a new book!</button>
-<div class="shadow hidden" id="overlay">
+   
+<div class="shadow" id="overlay">
     <div class="newBookForm">
         <form>
-            <h1 class="header">Add a New Book</h1>
+            <div class=headerNav><span class="header">Add a New Book</span>
+                <span id="closeWindow">X</span>
+            </div>
+            <label for="title">Title</label>
             <input type="text" id="title" placeholder="Title" required>
+            <label for="author">Author</label>
             <input type="text" id="author" placeholder="Author" required>
+            <label for="Pages">Pages</label>
             <input type="tel" id="pages" placeholder="Pages" format="^[0-9]+$" required>
-            <input type="text" id="read" placeholder="Have you read this?">    
+            <label for="read"><input type="checkbox" id="read"><span></span>Have you read this book?</label>
             <button id="submit">Submit</button>
         </form>
     </div>
